@@ -1,3 +1,14 @@
+# Universidad Escuela Colombiana de Ingeniería Julio Garavito
+## AREP - Arquitectura Empresarial
+
+---
+
+### Joan S. Acevedo A.
+### Juan Pablo Camargo T.
+### Andrea V. Torres T.
+
+---
+
 # HidraullicLSTM
 
 # Sistema de Predicción de Presión con LSTM
@@ -101,4 +112,8 @@ El sistema IoT real funciona de forma similar: envía los datos actuales y recib
 
 ## Observando resultados
 
+![Image](https://github.com/user-attachments/assets/9b3a2280-151e-43e8-af06-ed7b0c845d61)
 
+![Image](https://github.com/user-attachments/assets/2ccd15d8-5feb-4bec-b6d6-087ed79b82a8)
+
+![Image](https://github.com/user-attachments/assets/4595c13c-201b-4a2e-96fa-f8f8f07aed70)
