@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=marcusolsson-json-datasource
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    depends_on:
+      - api
+
+  api:
+    build: .
+    container_name: flask-api
+    ports:
+      - "5001:5001"
+    restart: always
+
+volumes:
+  grafana-storage:
