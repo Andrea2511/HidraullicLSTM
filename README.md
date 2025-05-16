@@ -45,7 +45,7 @@ Es una librería de Python que permite crear gráficos en 2D como gráficos de l
 Antes de ejecutar el modelo, asegúrate de tener **Python 3.8 o superior** instalado en tu sistema. También necesitarás de tu IDE favorito y `pip` para instalar las dependencias.
 
 
-### 🚀 Instrucciones de instalación y ejecución
+### Instrucciones de instalación y ejecución
 
 1. **Descomprime el archivo del proyecto (`server.zip`)** en tu directorio de trabajo.
 
@@ -66,6 +66,28 @@ pip install ./requirements.txt
 ```bash
 python app.py
 ```
+
+## Cómo usar la API
+
+Una vez en funcionamiento, puedes hacer una solicitud POST al endpoint (por ejemplo: http://localhost:5000/predict) con un JSON que contenga un vector de 96 valores de presión.
+
+### Ejemplo de entrada (JSON):
+
+```JSON
+{
+  "input_vector": [102.1, 101.9, 101.7, ..., 100.8]
+}
+```
+
+### Ejemplo de salida:
+
+``` JSON
+{
+  "predicted_calibration_frequency": 101.95
+}
+```
+
+Si el valor real de presión es muy diferente al estimado, se puede interpretar como una posible anomalía o fuga.
 
 ## Simulación del Funcionamiento
 
